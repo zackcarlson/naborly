@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getPost } from '../../actions/index.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import soccer from '../../images/header-image.jpg';
 
 const mapStateToProps = state => ({
   currentPost: state.currentPost
@@ -19,12 +18,13 @@ const Post = (props) => (
     <LazyLoadImage
       alt={'Header image'}
       height={'auto'}
-      src={props.image || soccer}
+      src={props.image}
       width={'100%'} />
     <div className='description-container'>
     <Link 
       to={`/posts/${props.id}`}
       onClick={() => props.getPost(props.id)}
+      className='link-to-post'
     >
       <h1>{props.title}</h1>
     </Link>

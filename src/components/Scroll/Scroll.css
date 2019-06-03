@@ -1,0 +1,29 @@
+.scroll-container {
+  position: fixed;
+  right: -100px;
+  bottom: 150px;
+  transition: right 0.5s, background-color .5s!important;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 10px;
+  color: #fff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  width: 2rem!important;
+  height: 2rem!important;
+  border-radius: 2px;
+  
+}
+
+.scroll-container:hover {
+  background-color: #353434 !important;
+}
+
+.scroll-container:focus,
+.scroll-container:active {
+  outline: none;
+}
+
+.scroll-transition {
+  right: 20px;
+}

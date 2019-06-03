@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { loadMore } from '../../actions/index.js';
 import Post from '../Post/Post.js';
+import Button from '../Button/Button.js';
+import Scroll from '../Scroll/Scroll.js';
 import './List.css';
 
 const mapStateToProps = state => ({
@@ -30,9 +32,9 @@ const List = (props) => (
           />
         )}
       </div>
-      
     </div>
-    <button onClick={props.loadMore}>Load More</button>
+    <Scroll/>
+    <Button loadMore={props.loadMore} pageSize={props.pageSize} postLen={props.posts.length}/>
   </div>
 );
 
