@@ -2,7 +2,6 @@
   border: 1px solid #E7EBED;
   border-radius: 5px;
   margin-bottom: 0;
-  padding: 40px;
   transition: all 0.2s ease-in-out;
   width: 100%;
 }
@@ -12,7 +11,7 @@
 	transform: translateY(-1px);
 }
 
-.post-container > ul > li {
+.post-container > .description-container > ul > li {
   list-style-type: none;
   display: inline-block;
   margin-left: .2rem;
@@ -26,11 +25,11 @@
   text-transform: uppercase;
 }
 
-.post-container > ul {
+.post-container > .description-container > ul {
   padding: 0;
 }
 
-.list-post > p {
+.list-post > .description-container > p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
@@ -48,4 +47,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
+}
+
+.list-post > .card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.list-post > .description-container {
+  padding: 40px;
 }

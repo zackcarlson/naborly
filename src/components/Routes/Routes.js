@@ -19,6 +19,7 @@ const Routes = (props) => (
         author={props.currentPost.author}
         tags={props.currentPost.tags}
         id={props.currentPost.id}
+        image={props.currentPost.image}
       />
     )}/>
   </Switch>

@@ -3,6 +3,8 @@ import './Post.css';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getPost } from '../../actions/index.js';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import soccer from '../../images/header-image.jpg';
 
 const mapStateToProps = state => ({
   currentPost: state.currentPost
@@ -13,7 +15,13 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const Post = (props) => (
-  <div className={'post-container ' + props.postClass || ''}>
+  <div className={'card post-container ' + props.postClass || ''}>
+    <LazyLoadImage
+      alt={'Header image'}
+      height={'auto'}
+      src={props.image || soccer}
+      width={'100%'} />
+    <div className='description-container'>
     <Link 
       to={`/posts/${props.id}`}
       onClick={() => props.getPost(props.id)}
@@ -29,6 +37,7 @@ const Post = (props) => (
       <i className='fas fa-inbox'></i>
       {props.tags.map((tag, idx) => <li key={idx}>{tag}</li>)}
     </ul>
+    </div>
   </div>
 );
 

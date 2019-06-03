@@ -26,6 +26,7 @@ const List = (props) => (
             key={post.id} 
             content={post.content}
             postClass={'list-post'}
+            image={post.image}
           />
         )}
       </div>
