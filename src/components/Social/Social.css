@@ -1,0 +1,29 @@
+.center-block > a {
+  padding: 20px;
+  color: black;
+  transition: color .5s;
+}
+
+.center-block > #social-facebook:hover {
+  color: #3b5998;
+}
+
+.center-block > #social-twitter:hover {
+  color: #1da1f2;
+}
+
+.center-block > #social-pinterest:hover {
+  color: #bd081c;
+}
+
+.center-block > #social-linkedin:hover {
+  color: #0077b5;
+}
+
+.center-block > a > i {
+  transform: scale(1.5,1.5);
+}
+
+.center-block {
+  margin: 3rem 0;
+}

@@ -1,3 +1,16 @@
+.list-header-container > h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.list-header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
 .list-post {
   border: 1px solid #E7EBED;
   border-radius: 5px;
@@ -11,7 +24,7 @@
 	transform: translateY(-1px);
 }
 
-.post-container > .description-container > ul > li {
+.post-container > .plural-post-container > .description-container > ul > li {
   list-style-type: none;
   display: inline-block;
   margin-left: .2rem;
@@ -25,11 +38,11 @@
   text-transform: uppercase;
 }
 
-.post-container > .description-container > ul {
+.post-container > .plural-post-container > .description-container > ul {
   padding: 0;
 }
 
-.list-post > .description-container > p {
+.list-post > .plural-post-container > .description-container > p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
@@ -54,6 +67,13 @@
   height: auto;
 }
 
-.list-post > .description-container {
-  padding: 40px;
+.list-post > .plural-post-container > .description-container {
+  padding: 0px 40px 20px 40px;
+}
+
+.description-container > .link-to-post > h2 {
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
 }
