@@ -1,6 +1,6 @@
 # Naborly Blog
 
-This is a client-side Blog made for Naborly written in React, React-Router, Redux, HTML5, and CSS3.  
+This is a client-side Blog made for Naborly written in React, React-Router, Redux, HTML5, and CSS3. [Live Demo](https://naborly-blog.firebaseapp.com) 
 
 ## Getting Started
 
