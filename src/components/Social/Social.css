@@ -25,5 +25,16 @@
 }
 
 .center-block {
-  margin: 3rem 0;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.social-footer > .container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.social-footer > .container > span {
+  font-weight: bold;
+  font-family: 'Poppins', 'sans-serif';
 }

@@ -4,6 +4,7 @@ import './Social.css';
 const Social = () => (
   <footer className='social-footer'>
     <div className='container'>
+      <span>Share this article:</span>
       <div className='text-center center-block'>
         <a href='https://www.facebook.com' id='social-facebook'><i className='fab fa-facebook-f'></i></a>
         <a href='https://twitter.com' id='social-twitter'><i className='fab fa-twitter'></i></a>
